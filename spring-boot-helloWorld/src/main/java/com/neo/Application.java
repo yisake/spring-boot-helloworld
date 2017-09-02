@@ -8,15 +8,8 @@ import org.slf4j.LoggerFactory;
 
 @SpringBootApplication
 @EnableScheduling
-public class Application {
-	final static Logger logger = LoggerFactory.getLogger("MyApp.class");
-	
+public class Application {	
 	public static void main(String[] args) {
-		logger.trace("trace");
-		logger.debug("debug str");
-		logger.info("info str");
-		logger.warn("warn");
-		logger.error("error");		
 		SpringApplication.run(Application.class, args);
 	}
 }
